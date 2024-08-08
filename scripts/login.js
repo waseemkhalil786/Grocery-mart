@@ -22,7 +22,7 @@ form.addEventListener("submit", async (event) => {
     // const user = userCredential.user;
     console.log("user...", userCredential);
 
-    window.location.href = "../pages/index.html";
+    window.location.href = "../pages/dashboard.html";
 
     form.reset();
   } catch (error) {

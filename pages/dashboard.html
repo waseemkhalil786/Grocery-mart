@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery store by Pakistan</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="../styling sheet/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <i class="fa fa-shopping-basket"></i>Grocery
+      </a>
+      <nav class="navebar">
+        <a href="#home">home</a>
+        <a href="#features">features</a>
+        <a href="#products">product</a>
+        <a href="#categories">categories</a>
+        <a href="#review">review</a>
+        <a href="#blogs">blogs</a>
+      </nav>
+      <div class="icons">
+        <div class="fa fa-bars" id="menue-btn"></div>
+        <div class="fa fa-search" id="search-btn"></div>
+        <div class="fa fa-shopping-cart" id="cart-btn"></div>
+        <div class="fa fa-user" id="login-btn"></div>
+      </div>
+      <form class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box" class="fa fa-search"></label>
+      </form>
+    </header>
+
+    <!-- start banner section -->
+
+    <section class="home" id="home">
+      <div class="right-img">
+        <img
+          src="../assets/fruits-vegetable.jpeg"
+          alt=""
+          width="350px"
+          height="200px"
+        />
+      </div>
+      <div class="content">
+        <h1>Fresh and <span>Organic</span> Products for you</h1>
+        <p>
+          The Website is Designed By WASEEM KHALIL !!! I am a Frontend Developer
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+
+        <a href="#" class="shop-btn">shop now</a>
+      </div>
+      <div class="left-img">
+        <img
+          src="../assets/fruits-and-vegetables_650x366_41486465566.webp"
+          alt=""
+          width="350px"
+          height="200px"
+        />
+      </div>
+    </section>
+
+    <!-- start middel section -->
+
+    <div class="main-product-div">
+      <h1>Products Details</h1>
+    </div>
+    <div class="Middle-section">
+      <form class="form">
+        <div class="main-product-div">
+          <h1>Create Products</h1>
+        </div>
+        <input
+          type="text"
+          id="product-name"
+          placeholder="Your Product name"
+          required
+        />
+        <input
+          type="number"
+          id="product-price"
+          placeholder="Product price"
+          required
+        />
+        <input
+          type="text"
+          id="product-detail"
+          placeholder="Product description"
+          required
+        />
+        <input
+          type="file"
+          id="product-img"
+          placeholder="Product image"
+          required
+        />
+        <div class="add-btn">
+          <button class="add-product-btn">Add product</button>
+        </div>
+      </form>
+
+      <div id="product-container" class="product-items">
+        <!-- new product added -->
+      </div>
+      <!-- <div class="product-item00">
+        <img src="" alt="Product 2" class="img-proces">
+        <h3></h3>
+        <p></p>
+        <a href="" class="btn002"></a>
+      </div> -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="../scripts/app.js"></script>
+  </body>
+</html>

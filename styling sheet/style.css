@@ -8,7 +8,7 @@
 
 }
 *{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,6 +27,54 @@ html{
 }
 body{
     background: #eee;
+}
+
+section{
+    padding: 15rem 0%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3f3f3;
+}
+.content{
+    width: 550px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.content h1 span{
+    color: rgb(0, 156, 0);
+    font-size: 40px;
+}
+.content p{
+    color: rgb(83, 88, 83);
+    font-size: 25px;
+}
+.content a{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 180px;
+    width: 100px;
+    height: 40px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+}
+.shop-btn:hover{
+    color: white;
+    background: var(--green);
+}
+.right-img{
+    margin-top: 70px;
+    margin-right: 120px;
+}
+.left-img{
+    margin-top: 70px;
+    margin-left: 100px;
 }
 .header{
     position: fixed;
@@ -113,3 +161,94 @@ body{
 }
 
 /* daily basis five vedios and my project will complete */
+
+ .main-product-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #ffffff; 
+    color: #000000;
+    margin-top: 20px;
+}
+.main-product-div h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Middle-section{
+    display: flex;
+    justify-content: baseline;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 10px solid rgb(4, 108, 10);
+    width: 450px;
+    height: 500px;
+    margin: 20px;
+}
+.form input{
+    font-size: 30px;
+    margin-top: 15px;
+    background: #e3c9c9;
+    height: 60px;
+    margin: 15px;
+    border-radius: 5px;
+}
+.add-btn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+.add-product-btn{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    display: block;
+    justify-content:center;
+    text-align: center;
+    background: #364f26;
+    color: white;
+    font-weight: 500;
+    box-shadow: var(--box-shadow);
+}
+.add-product-btn:hover{
+    background: #76ae53;
+}
+
+/* new product */
+
+.product-item00{
+    display: flex;
+    flex-direction: column ;
+    justify-content: start;
+    align-items: center;
+    margin: 20px;
+    background: #e6ba68;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+.product-item00 img{
+    margin:15px;
+    width: 320px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.product-item00 h3{
+    font-size: 30px;
+}
+.product-item00 p{
+    font-size: 30px;
+}
+.product-item00 a{
+    font-size: 25px;
+}

@@ -8,6 +8,23 @@ import {
   onAuthStateChanged,
 } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
 
+import {
+  getFirestore,
+  doc,
+  collection,
+  addDoc,
+  serverTimestamp,
+  onSnapshot,
+  getDocs,
+} from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
+
+import {
+  getStorage,
+  ref,
+  uploadBytes,
+  getDownloadURL,
+} from "https://www.gstatic.com/firebasejs/10.12.4/firebase-storage.js";
+
 const firebaseConfig = {
   apiKey: "AIzaSyD1DmG-uBYHhg9fZHvzMMmAm_nilua1Kv8",
   authDomain: "grocery-store-e1396.firebaseapp.com",
@@ -22,11 +39,28 @@ const app = initializeApp(firebaseConfig);
 
 const auth = await getAuth(app);
 
-// export let checking ="WK developer"
+const db = getFirestore(app);
+
+const storage = getStorage(app);
 export {
   auth,
+  getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
-  signOut,
   onAuthStateChanged,
+  signOut,
+  doc,
+  collection,
+  addDoc,
+  serverTimestamp,
+  onSnapshot,
+  getDocs,
+  db,
+  getFirestore,
+  ref,
+  uploadBytes,
+  storage,
+  getDownloadURL,
+  getStorage,
+  
 };
